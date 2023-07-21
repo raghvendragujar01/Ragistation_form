@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="form-heading">Internship Registration Form</h1>
+
+            <!-- Personal Information -->
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                <label for="fullName">Full Name: *</label>
+                <input type="text" id="fullName" name="fullName"required  placeholder="RAGHVENDRA GUJAR">
+
+                <label for="dob">Date of Birth: *</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <fieldset>
+                    <legend>Gender: *</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" required>
+                </fieldset>
+
+                <label for="nationality">Nationality: *</label>
+                <select id="nationality" name="nationality" required>
+                    <option value="">-- Select a Nationality --</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter your Address"></textarea>
+
+                <label for="city">City: *</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="state">State/Province: *</label>
+                <input type="text" id="state" name="state" required>
+
+                <label for="postalCode">Postal Code: *</label>
+                <input type="number" id="postalCode" name="postalCode" placeholder="462023" >
+
+                <label for="country">Country: *</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select a Country --</option>
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="phone">Phone Number: *</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email: *</label>
+                <input type="email" id="email" name="email" required placeholder="macrest123@gmail.com">
+            </div>
+
+            <!-- Education Details -->
+            <div class="form-section">
+                <h2>Education Details</h2>
+                <label for="institute">Current Institute/University: *</label>
+                <input type="text" id="institute" name="institute" required placeholder="">
+
+                <label for="fieldOfStudy">Field of Study: *</label>
+                <input type="text" id="fieldOfStudy" name="fieldOfStudy" required placeholder="">
+
+                <label for="yearOfStudy">Year of Study: *</label>
+                <select id="yearOfStudy" name="yearOfStudy" required>
+                    <option value="">-- Select a Year of Study --</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+
+                <label for="gpa">GPA/CGPA (if applicable): *</label>
+                <input type="text" id="gpa" name="gpa" required placeholder="">
+            </div>
+
+            <!-- Internship Details -->
+            <div class="form-section">
+                <h2>Internship Details</h2>
+                <label for="desiredPosition">Desired Internship Position: *</label>
+                <input type="text" id="desiredPosition" name="desiredPosition" required placeholder="">
+
+                <label for="preferredDepartment">Preferred Department/Field: *</label>
+                <input type="text" id="preferredDepartment" name="preferredDepartment" required placeholder="">
+
+                <label for="startDate">Duration of Internship Start Date: *</label>
+                <input type="date" id="startDate" name="startDate" required>
+
+                <label for="endDate">Duration of Internship End Date: *</label>
+                <input type="date" id="endDate" name="endDate" required>
+
+                <label for="availability">Availability: *</label>
+                <select id="availability" name="availability" required>
+                    <option value="">-- Select Availability --</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Full-time">Full-time</option>
+                </select>
+
+                <label for="hoursPerWeek">Number of Hours per Week Available:</label>
+                <input type="text" id="hoursPerWeek" name="hoursPerWeek" placeholder="">
+            </div>
+
+            <!-- Skills and Qualification -->
+            <div class="form-section">
+                <h2>Skills and Qualification</h2>
+                <h3>Technical Skills</h3>
+                <label for="programmingLanguages">Programming Languages:</label>
+                <input type="text" id="programmingLanguages" name="programmingLanguages" placeholder="">
+
+                <label for="softwareApplications">Software Applications:</label>
+                <input type="text" id="softwareApplications" name="softwareApplications" placeholder="">
+
+                <label for="toolsTechnologies">Tools and Technologies:</label>
+                <input type="text" id="toolsTechnologies" name="toolsTechnologies" placeholder="">
+
+                <label for="languageProficiency">Language Proficiency: *</label>
+                <select id="languageProficiency" name="languageProficiency" required>
+                    <option value="">-- Select Language Proficiency --</option>
+                    <option value="English">English</option>
+                    <option value="Other Languages">Other Languages</option>
+                </select>
+
+                <h3>Certification or Training Name</h3>
+                <label for="certificationName">Certification/Training Name:</label>
+                <input type="text" id="certificationName" name="certificationName" placeholder="">
+
+                <label for="issuingOrganization">Issuing Organization:</label>
+                <input type="text" id="issuingOrganization" name="issuingOrganization" placeholder="">
+
+                <label for="completionDate">Date of Completion:</label>
+                <input type="date" id="completionDate" name="completionDate">
+            </div>
+
+            <!-- Experience -->
+            <div class="form-section">
+                <h2>Experience</h2>
+                <h3>Previous Internship Experience (if any)</h3>
+                <label for="previousCompany">Company/Organization Name:</label>
+                <input type="text" id="previousCompany" name="previousCompany" placeholder="">
+
+                <label for="roleResponsibilities">Role/Responsibilities:</label>
+                <input type="text" id="roleResponsibilities" name="roleResponsibilities" placeholder="">
+
+                <label for="experienceDuration">Duration:</label>
+                <input type="text" id="experienceDuration" name="experienceDuration" placeholder="">
+
+                <h3>Project or Achievements</h3>
+                <label for="projectTitle">Project Title:</label>
+                <input type="text" id="projectTitle" name="projectTitle" placeholder="">
+
+                <label for="projectDescription">Description:</label>
+                <textarea id="projectDescription" name="projectDescription" rows="4" placeholder=""></textarea>
+
+                <label for="yourRole">Your Role:</label>
+                <input type="text" id="yourRole" name="yourRole" placeholder="">
+            </div>
+
+            <!-- Motivation and Career Goals -->
+            <div class="form-section">
+                <h2>Motivation and Career Goals</h2>
+                <label for="reasonsForApplying">Reasons for Applying to the Internship: *</label>
+                <textarea id="reasonsForApplying" name="reasonsForApplying" rows="4" required></textarea>
+
+                <label for="careerGoals">Career Goals and Objectives: *</label>
+                <textarea id="careerGoals" name="careerGoals" rows="4" required></textarea>
+            </div>
+
+            <!-- Professional Social Media Profiles -->
+            <div class="form-section">
+                <h2>Professional Social Media Profiles</h2>
+                <label for="linkedinProfile">LinkedIn Profile:</label>
+                <input type="text" id="linkedinProfile" name="linkedinProfile" placeholder="">
+
+                <label for="githubProfile">GitHub Profile:</label>
+                <input type="text" id="githubProfile" name="githubProfile" placeholder="">
+
+                <label for="otherProfile">Other Relevant Profile:</label>
+                <input type="text" id="otherProfile" name="otherProfile" placeholder="">
+            </div>
+
+            <!-- References -->
+            <div class="form-section">
+                <h2>References</h2>
+                <label for="referenceName">Name of Reference:</label>
+                <input type="text" id="referenceName" name="referenceName" placeholder="">
+
+                <label for="referenceDesignation">Designation/Organization:</label>
+                <input type="text" id="referenceDesignation" name="referenceDesignation" placeholder="">
+
+                <label for="referenceContact">Contact Number:</label>
+                <input type="tel" id="referenceContact" name="referenceContact" placeholder="">
+
+                <label for="referenceEmail">Email Address:</label>
+                <input type="email" id="referenceEmail" name="referenceEmail" placeholder="">
+            </div>
+
+            <!-- Additional Comments or Information -->
+            <div class="form-section">
+                <label for="additionalComments">Additional Comments or Information:</label>
+                <textarea id="additionalComments" name="additionalComments" rows="4" placeholder="Enter your comments or information"></textarea>
+            </div>
+
+            <!-- Declaration -->
+            <div class="form-section">
+                <h2>Declaration</h2>
+                <p>By submitting this form, I certify that all the information provided is true and accurate to the best of my knowledge.</p>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
